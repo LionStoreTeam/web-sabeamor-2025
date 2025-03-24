@@ -7,13 +7,13 @@ const Footer = () => {
     // Get current year 
     const currentYear = new Date().getFullYear();
     return (
-        <div className="bg-nav-footer py-1 w-full flex flex-col bottom-0 items-center justify-center text-center text-white bg-red-700" >
+        <div className="bg-nav-footer py-1 w-full flex flex-col bottom-0 items-center justify-center text-center text-white bg-red-800" >
             <div className="p-5 mb-5  flex flex-col justify-center items-center">
                 <h1 className="mb-10 text-[25px] md:text-[50px] border-b-2">
                     Llámanos
                     <br />
                     (+52) 777 - 283 - 3780</h1>
-                <Image src="/logo-t.png" alt='' width={350} height={350} className="float my-10 bg-white rounded-full bg-opacity-90" />
+                <Image src="/logo-t.png" alt='' width={350} height={350} className="float my-10 p-1 bg-white rounded-3xl bg-opacity-90" />
                 <p className="text-[20px] md:text-[25px] border-b-2">sabeamorjamaica@gmail.com</p>
             </div>
             {/* Social Media */}
