@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import { ContactWhatsAppButton } from "./components/ContactWhatsappButton";
 import { bellotaText } from "../fonts/fonts";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Sabe aMOR",
@@ -68,6 +69,7 @@ export default function RootLayout({
         <ContactWhatsAppButton />
         <ScrollToTopButton />
         <Footer />
+        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   );
